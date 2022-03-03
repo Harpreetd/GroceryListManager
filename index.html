@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Grocery Shopping</title>
+  </head>
+  <body>
+    <div class="day-heading"><h1 id="day-today"></h1></div>
+    <!-- have enough list -->
+    <div class="main-container">
+      <div class="container1">
+        <div class="box item" id="list1">
+          <img src="/assets/full-Basket.png" alt="basket full of food items" />
+          <input
+            type="text"
+            id="products-enough"
+            placeholder="Have enough of..."
+            onfocus="this.value=''"
+          />
+
+          <button onclick="addToEnoughList()">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+        <div class="box" id="enough-list"></div>
+      </div>
+
+      <!-- about to run out of/almost-finish list -->
+
+      <div class="container2">
+        <div class="box item" id="list2">
+          <img src="/assets/empty-Basket.png" alt="empty-basket" />
+          <input
+            type="text"
+            id="almost-finish"
+            placeholder="About to run out of..."
+            onfocus="this.value=''"
+          />
+
+          <button onclick="addToAlmostFinishList()">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+        <div class="box" id="almost-finish-list"></div>
+      </div>
+
+      <!-- Need to buy list -->
+      <div class="container3">
+        <div class="box item-and-price" id="list3">
+          <img src="/assets/shopping.png" alt="shopping bag with food items" />
+          <input
+            type="text"
+            id="need-to-buy"
+            placeholder="Need to buy now"
+            onfocus="this.value=''"
+          />
+          <input
+            type="text"
+            id="product-price"
+            placeholder="Price"
+            onfocus="this.value=''"
+          />
+          <button onclick="addToBuyList()"><i class="fa fa-plus"></i></button>
+        </div>
+        <div class="box" id="need-to-buy-list"></div>
+        <div class="box" id="total-price"></div>
+      </div>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
