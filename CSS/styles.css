@@ -11,8 +11,10 @@ body {
   max-width: 450px;
   margin: 40px auto;
   padding: 1px;
+
   border-radius: 20px;
   background-color: #bccc44;
+
   text-align: center;
   color: #fff;
 }
@@ -24,8 +26,9 @@ img {
 }
 
 .main-container {
-  width: 100%;
+  /* width: 100%; */
   display: grid;
+  gap: 20px;
   grid-template-rows: auto;
   grid-template-areas:
     "list1 "
@@ -48,13 +51,14 @@ h1 {
   margin: 30px auto;
   background: #fff;
   border-radius: 5px;
-  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 15px -5px rgba(188, 204, 74, 0.3);
 }
 input[type="text"] {
   text-align: center;
   height: 30px;
   padding: 15px;
   border: none;
+
   font-size: 15px;
   font-weight: 200;
 }
@@ -63,7 +67,7 @@ input[type="text"] {
 }
 input[type="text"]:focus {
   outline: none;
-  box-shadow: inset 0 -3px 0 0 #bccc44;
+  box-shadow: inset 0 -4px 0 0 #bccc44;
 }
 .item {
   width: 100%;
@@ -84,9 +88,18 @@ button {
   min-height: 20px;
   width: 40px;
   border-color: transparent;
+  background-color: #fff;
+  color: #bccc44;
+
+  font-size: 22px;
+}
+button:hover {
   background-color: #bccc44;
   color: #fff;
-  font-size: 20px;
+}
+.total {
+  background: #bccc44;
+  border-radius: 5px;
 }
 #total-price {
   text-align: center;
