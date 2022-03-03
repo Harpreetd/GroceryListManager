@@ -107,8 +107,9 @@ button {
 /* for screen-size between 600px & 992px */
 @media only screen and (min-width: 600px) and (max-width: 992px) {
   .main-container {
-    width: 90%;
     margin: auto;
+    width: 90%;
+
     display: grid;
     grid-template-rows: auto;
     grid-template-areas:

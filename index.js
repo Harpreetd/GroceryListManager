@@ -121,7 +121,7 @@ function showToBuyList() {
   for (let i = 0; i < lists.needTOBuyListArray.length; i++) {
     total += lists.needTOBuyListArray[i].price;
   }
-  totalPrice.innerHTML = `<h3>  Total amount : ${total}</h3>`;
+  totalPrice.innerHTML = `<h3>  Total amount : ${total} NOK</h3>`;
 }
 function deleteFromBuyList(i) {
   let confirmUser = prompt("Do you want to delete this from your list? Yes/No");
